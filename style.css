@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+}
+
+.calculator-container {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "display display display display"
+        "back clear clear divide" 
+        "seven eight nine multiply"
+        "four five six minus"
+        "one two three plus"
+        "nul nul float equals";
+}
+
+body {
+    height: 100vh;
+    font-weight: 300;
+    background-color: rgb(17, 17, 17);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    background-color: rgb(17, 17, 17);
+    border: 1px solid whitesmoke;
+    transition: .03s ease;
+}
+
+button:hover {
+    
+    border: 1px solid rgb(255, 174, 0);
+    transform: scale(1.05);
+}
+
+.calculator-display {
+    grid-area: display;
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.calculator-control{
+    color: rgb(255, 174, 0);
+}
+
+.calculator-float {
+    color: rgb(255, 174, 0);
+}
+.calculator-operator {
+    color: rgb(255, 174, 0);
+}
+.calculator-number {
+    color: whitesmoke;
+}
+
+.num0 {
+    grid-area: nul;
+}
+.num1 {
+    grid-area: one;
+}
+.num2 {
+    grid-area: two;
+}
+.num3 {
+    grid-area: three;
+}
+.num4 {
+    grid-area: four;
+}
+.num5 {
+    grid-area: five;
+}
+.num6 {
+    grid-area: six;
+}
+.num7 {
+    grid-area: seven;
+}
+.num8 {
+    grid-area: eight;
+}
+.num9 {
+    grid-area: nine;
+}
+
+.plus {
+    grid-area: plus;
+}
+.divide {
+    grid-area: divide;
+}
+.minus {
+    grid-area: minus;
+}
+.multiply {
+    grid-area: multiply;
+}
+
+.clear {
+    grid-area: clear;
+}
+.back {
+    grid-area: back;
+}
+.equals {
+    grid-area: equals;
+}
+.float {
+    grid-area: float;
+}
+
+#cr {
+    position: absolute;
+    color: whitesmoke;
+    bottom: 20px;
+    margin: auto;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .calculator-container {
+        width: 250px;
+        height: 350px;
+    }
+    .calculator-display {
+        height: 20px;
+    }
+  }

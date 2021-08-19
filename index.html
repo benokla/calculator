@@ -6,36 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
     <div class="calculator-container">
         <p class="calculator-display"></p>
 
-        <button class="calculator-number">0</button>
-        <button class="calculator-number">1</button>
-        <button class="calculator-number">2</button>
-        <button class="calculator-number">3</button>
-        <button class="calculator-number">4</button>
-        <button class="calculator-number">5</button>
-        <button class="calculator-number">6</button>
-        <button class="calculator-number">7</button>
-        <button class="calculator-number">8</button>
-        <button class="calculator-number">9</button>
+        <button class="calculator-number num0">0</button>
+        <button class="calculator-number num1">1</button>
+        <button class="calculator-number num2">2</button>
+        <button class="calculator-number num3">3</button>
+        <button class="calculator-number num4">4</button>
+        <button class="calculator-number num5">5</button>
+        <button class="calculator-number num6">6</button>
+        <button class="calculator-number num7">7</button>
+        <button class="calculator-number num8">8</button>
+        <button class="calculator-number num9">9</button>
 
-        <button class="calculator-operator" value="add">+</button>
-        <button class="calculator-operator" value="subtract">-</button>
-        <button class="calculator-operator" value="divide">/</button>
-        <button class="calculator-operator" value="multiply">*</button>
+        <button class="calculator-operator plus" value="add">+</button>
+        <button class="calculator-operator minus" value="subtract">-</button>
+        <button class="calculator-operator divide" value="divide">/</button>
+        <button class="calculator-operator multiply" value="multiply">*</button>
 
-        <button class="calculator-float">.</button>
+        <button class="calculator-float float">.</button>
 
-        <button class="calculator-control" id="calculator-equals">=</button>
-        <button class="calculator-control" id="calculator-clear">AC</button>
-        <button class="calculator-control" id="calculator-back">Back</button>
+        <button class="calculator-control equals" id="calculator-equals">=</button>
+        <button class="calculator-control clear" id="calculator-clear">AC</button>
+        <button class="calculator-control back" id="calculator-back">Back</button>
 
+        
     </div>
-
+    <p id="cr">© by benokla 2021</p>
     <script src="app.js"></script>
 </body>
 </html>
